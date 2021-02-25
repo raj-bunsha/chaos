@@ -23,10 +23,8 @@ pointy=random.uniform(a2,d)
 pointx=random.uniform(a1-(-a2+pointy)/sqrt(3),a1+(-a2+pointy)/sqrt(3))
 for i in range(100000):
 	i+=1
-	print(pointx,pointy)
 
 	nvertex=random.randint(1,3)
-	print(nvertex)
 	setFill("black")
 	ellipse(pointx,pointy,1,1)
 	if nvertex==1:
