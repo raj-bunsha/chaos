@@ -14,7 +14,6 @@ vertex1=(a1,a2)
 vertex2=(a1+side,a2)
 vertex3=(a1+side,a2+side)
 vertex4=(a1,a2+side)
-print(vertex1,vertex2,vertex3,vertex4)
 polygon(vertex1[0],vertex1[1],vertex2[0],vertex2[1],vertex3[0],vertex3[1],vertex4[0],vertex4[1],vertex1[0],vertex1[1])
 #polygon(300, 450, 350, 450, 500, 500, 500, 550, 450, 550, 300, 500)
 #line(150, 300, 200, 350)
@@ -25,14 +24,11 @@ pointx=random.uniform(a1-(-a2+pointy)/sqrt(3),a1+(-a2+pointy)/sqrt(3))
 nvertex=random.randint(1, 4)
 for i in range(100000):
 	i+=1
-	print(pointx,pointy)
 	while True:
 		nvertex1=random.randint(1,4)
 		if nvertex1!=nvertex:
 			nvertex=nvertex1
 			break
-
-	print(nvertex)
 	setFill("black")
 	ellipse(pointx,pointy,1,1)
 	if nvertex==1:
