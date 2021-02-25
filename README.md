@@ -1,2 +1,2 @@
 # chaos
-an unregular pattern of random points giving fractals
+An Unregular Pattern of Random Points giving Fractals
